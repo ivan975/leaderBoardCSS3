@@ -109,3 +109,25 @@ hr {
   background-color: #ff4a5f8f;
   border-radius: 5px;
 }
+
+/*===========
+ media-query 
+ =============*/
+
+/* mobile device */
+@media screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,
+  .blog {
+    flex-direction: column;
+  }
+  .courses {
+    display: none;
+  }
+}
